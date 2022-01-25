@@ -1,0 +1,39 @@
+header{
+    height: 100vh;
+    height: 600px;
+    display: flex;
+    margin-left: 77px;
+    margin-top: 68px;
+    position: absolute;
+}
+
+.nav_wrap{
+    display: flex;
+    // margin-left: 77px;
+    // margin-top: 68px;
+    letter-spacing: 3.8px;
+}
+
+.store-title{
+    font-size: 38px;
+    letter-spacing: 3.8px;
+
+}
+
+nav{
+    ul{
+
+        display: flex;
+        font-size: 18px;
+        li{
+            margin-left: 20px;
+            &:nth-of-type(1){
+                border-bottom: 1px solid;
+            }
+        }
+    }
+
+
+}
+
+

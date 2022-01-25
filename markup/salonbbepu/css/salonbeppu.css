@@ -1,0 +1,287 @@
+@charset "UTF-8";
+/*後に必要になるかも*/
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav, ul, li {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+a:visited {
+  color: inherti;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+.first-v {
+  background-color: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.first-v .first-v-content-wrap {
+  position: relative;
+  width: 50%;
+  text-align: center;
+}
+
+.first-v .first-v-content-wrap .first-v__content {
+  font-size: 38px;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+}
+
+.first-v .first-v-content-wrap .first-v__content .content_ja {
+  font-family: Hiragino Mincho Pro;
+  margin-bottom: 96px;
+  letter-spacing: 3.8px;
+}
+
+.first-v .first-v-content-wrap .first-v__content .content_en {
+  font-family: Zapfino;
+  letter-spacing: 3.8px;
+}
+
+.first-v .first-v-img {
+  width: 50%;
+}
+
+.first-v .first-v-img img {
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  height: 100vh;
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 77px;
+  margin-top: 68px;
+  position: absolute;
+}
+
+.nav_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  letter-spacing: 3.8px;
+}
+
+.store-title {
+  font-size: 38px;
+  letter-spacing: 3.8px;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 18px;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li:nth-of-type(1) {
+  border-bottom: 1px solid;
+}
+
+.concept {
+  height: 1300px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#A193861F), color-stop(50%, #A1938689));
+  background: linear-gradient(to bottom, #A193861F 0% 50%, #A1938689 50% 100%);
+}
+
+.concept .concept-wrap {
+  position: relative;
+  top: 350px;
+  margin: 0 auto;
+  height: 100px;
+  width: 80%;
+}
+
+.concept__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+  color: #707070;
+}
+
+.concept__title p {
+  display: inline-block;
+  font-size: 18px;
+  font-family: Roboto;
+  letter-spacing: 5.4px;
+}
+
+.concept__title::after {
+  width: 100px;
+  display: inline-block;
+  border-bottom: 1px solid;
+  content: "";
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+  margin-left: 30px;
+}
+
+.concept__img-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.concept__img-wrap :nth-of-type(1) {
+  height: 415px;
+  width: 65%;
+  background-size: cover;
+}
+
+.concept__img-wrap :nth-of-type(2) {
+  height: 415px;
+  width: 31%;
+  margin-left: 10px;
+}
+
+.concept__messege-wrap {
+  height: 130px;
+  width: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 92px auto 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.concept__messege-wrap .messegeRight {
+  width: 455px;
+  font-size: 40px;
+  letter-spacing: 16px;
+  text-align: center;
+  line-height: 65px;
+  color: #FFFFFF;
+  font-family: "ヒラギノ明朝 ProN W3";
+}
+
+.concept__messege-wrap .messegeLeft {
+  font-size: 16px;
+  letter-spacing: 1.6px;
+  width: 422px;
+  text-align: center;
+  color: #FFFFFF;
+  font-family: Hiragino Kaku Gothic Pro;
+}
+
+.test {
+  background-color: red;
+}
+/*# sourceMappingURL=salonbeppu.css.map */

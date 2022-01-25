@@ -1,0 +1,71 @@
+.first-v{
+    // position: absolute;
+    background-color: red;
+    display: flex;
+    // justify-content: space-between;
+    // height: 800px;
+
+    .first-v-content-wrap{
+        // left: 50%;
+        position: relative;
+        width: 50%;
+        text-align: center;
+        // height: 100%;
+
+
+        .first-v__content{
+            font-size: 38px;
+            position: absolute;
+            width: 100%;
+            top: 50%;
+            // background-color: #fff;
+            transform: translate(0%, -50%);
+
+            .content_ja{
+                font-family: Hiragino Mincho Pro;
+                margin-bottom: 96px;
+                // margin-bottom: 48px;
+                letter-spacing: 3.8px;
+            }
+            .content_en{
+                font-family: Zapfino;
+                letter-spacing: 3.8px;
+            }
+
+        }
+    }
+
+    .first-v-img{
+        width: 50%;
+        img{
+            // background-size: cover;
+            width: 100%;           
+            height: 100%;
+        }
+    }
+}
+
+
+//お試し
+// .first-v{
+    // position: absolute;
+//     background-color: red;
+//     display: flex;
+//     justify-content: space-between;
+//     // height: 100%;
+
+//     .first-v__content{
+//             position: absolute;
+//         // top: 50%;
+//         background-color: #fff;
+//         width: 390px;
+//         height: 50%;
+//         top: 50%;
+//         // align-items: center;
+//         text-align: center;
+//     }
+
+//     .first-v-img img{
+//         width: 50%;
+//     }
+// }

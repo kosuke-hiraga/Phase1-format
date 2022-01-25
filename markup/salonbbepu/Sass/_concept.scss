@@ -1,0 +1,104 @@
+.concept{
+    height: 1300px;
+    background: linear-gradient(to bottom, #A193861F 0% 50%, #A1938689 50% 100%);
+    // width: 100%;
+
+    .concept-wrap{
+        position: relative;
+        top: 350px;
+        margin: 0 auto;
+        // background-color: blue;
+        height: 100px;
+        // width: 1000px;
+        width: 80%;
+    }
+
+
+
+    &__title{
+        // background-color: yellow;
+        display: flex;
+        margin-bottom: 10px;
+        color: #707070;
+        
+
+        p{;
+            display: inline-block;
+            font-size: 18px;
+            // margin-right: 120px;
+            font-family: Roboto;
+            letter-spacing: 5.4px;
+        }
+
+        &::after{
+            // display: block;
+            width: 100px;
+            // height: 10px;
+            display: inline-block;
+            border-bottom: 1px solid;
+            content: "";
+            transform: translate(0%, -50%);
+            margin-left: 30px;
+        }
+    }
+}
+
+
+.concept__img-wrap{
+    display: flex;
+    // width: 1000px;
+
+    :nth-of-type(1){
+        height: 415px;
+        width: 65%;       
+        // width: 675px;
+        background-size: cover; 
+    }
+
+    :nth-of-type(2){
+        height: 415px;
+        width: 31%;        
+        // width: 391px;
+        margin-left: 10px;
+    }
+    // img{
+    //     // width: 675px;
+    //     height: 415px;
+    //     width: 60%;
+    //     // background-size: cover;
+    //     // height: 50%;
+    //     margin-left: 10px;
+    // }
+}
+
+.concept__messege-wrap{
+    height: 130px;
+    width: 1000px;
+    display: flex;
+    margin: 92px auto 0;
+    justify-content: space-between;
+    .messegeRight{
+        // width: 55%;
+        width: 455px;
+        font-size: 40px;
+        letter-spacing: 16px;
+        text-align: center;
+        line-height: 65px;
+        color: #FFFFFF;
+        // font-family: Hiragino Mincho Pro;
+        font-family:"ヒラギノ明朝 ProN W3";
+        
+    }
+    .messegeLeft{
+        font-size: 16px;
+        letter-spacing: 1.6px;
+        // width: 50%;
+        width: 422px;
+        text-align: center;
+
+        color: #FFFFFF;
+        font-family: Hiragino Kaku Gothic Pro;
+        
+
+    }
+}
