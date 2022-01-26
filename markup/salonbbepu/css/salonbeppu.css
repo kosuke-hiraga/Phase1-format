@@ -114,7 +114,6 @@ input, select {
   vertical-align: middle;
 }
 .first-v {
-  background-color: red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -194,7 +193,7 @@ nav ul li:nth-of-type(1) {
 }
 
 .concept {
-  height: 1300px;
+  height: 1100px;
   background: -webkit-gradient(linear, left top, left bottom, from(#A193861F), color-stop(50%, #A1938689));
   background: linear-gradient(to bottom, #A193861F 0% 50%, #A1938689 50% 100%);
 }
@@ -223,7 +222,7 @@ nav ul li:nth-of-type(1) {
 }
 
 .concept__title::after {
-  width: 100px;
+  width: 1000px;
   display: inline-block;
   border-bottom: 1px solid;
   content: "";
@@ -279,6 +278,227 @@ nav ul li:nth-of-type(1) {
   text-align: center;
   color: #FFFFFF;
   font-family: Hiragino Kaku Gothic Pro;
+}
+
+.menu {
+  width: 100vw;
+  padding-bottom: 100px;
+  background-color: white;
+}
+
+.menu .menu-wrap {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.menu-title {
+  color: #707070;
+  margin-bottom: 10px;
+  margin-top: 260px;
+  height: 18px;
+}
+
+.menu-title p {
+  display: inline-block;
+  font-size: 18px;
+  font-family: Roboto;
+  letter-spacing: 5.4px;
+}
+
+.menu-title::after {
+  width: 100px;
+  height: 100%;
+  display: inline-block;
+  border-bottom: 1px solid;
+  content: "";
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+  margin-left: 30px;
+}
+
+.menu__content-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu__content {
+  width: 270px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 10px;
+}
+
+.menu__content--img {
+  width: 270px;
+  height: 270px;
+}
+
+.menu__content--img img {
+  width: 100%;
+  height: 100%;
+}
+
+.menu__content--title {
+  text-align: center;
+  font-family: Roboto Mono for Powerline;
+  font-size: 30px;
+  margin: 35px 0;
+}
+
+.menu__content--text {
+  font-size: 16px;
+  letter-spacing: 1.6px;
+  text-align: left;
+  margin-bottom: 35px;
+}
+
+.menu__content--price {
+  text-align: right;
+}
+
+.access {
+  background-color: #A193861F;
+  padding-top: 300px;
+  padding-bottom: 100px;
+}
+
+.access-wrap {
+  width: 100%;
+}
+
+.access-wrap .access__title {
+  color: #707070;
+  margin-bottom: 10px;
+  padding-left: 100px;
+}
+
+.access-wrap .access__title p {
+  display: inline-block;
+  font-size: 18px;
+  font-family: Roboto;
+  letter-spacing: 5.4px;
+}
+
+.access-wrap .access__title::after {
+  width: 100px;
+  height: 12px;
+  display: inline-block;
+  border-bottom: 1px solid;
+  content: "";
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+  margin-left: 30px;
+}
+
+.access-wrap .access__content-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 400px;
+  background-color: #D0C5BA;
+}
+
+.access-wrap .access__content-wrap .access__content--left {
+  width: 40%;
+  color: #FFFFFF;
+  letter-spacing: 1.6px;
+  text-align: left;
+  padding-left: 100px;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translate(0%, -25%);
+          transform: translate(0%, -25%);
+}
+
+.access-wrap .access__content-wrap .access__content--left .storeName {
+  color: #00000038;
+  font-size: 24px;
+  letter-spacing: 2.4px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.access-wrap .access__content-wrap .access__content--left .tel {
+  margin-bottom: 23px;
+}
+
+.access-wrap .access__content-wrap .access__content--left .businessHour {
+  margin-bottom: 23px;
+}
+
+.access-wrap .access__content-wrap .access__content--left .resularHoliday {
+  margin-bottom: 23px;
+}
+
+.access-wrap .access__content-wrap .access__content--right {
+  width: 60%;
+}
+
+.access-wrap .access__content-wrap .access__content--right img {
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  font-family: Roboto Mono for Powerline;
+}
+
+.footer-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-top: 1px solid #70707036;
+  width: 83%;
+  margin: 165px auto 0;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.footer-wrap .footer__title {
+  color: #7070704D;
+  font-size: 32px;
+  letter-spacing: 3.2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-wrap .footer__title .fab {
+  color: black;
+}
+
+.footer-wrap .footer__title p {
+  margin-right: 26px;
+}
+
+.footer-wrap .footer__title .fa-facebook-square {
+  margin-left: 9px;
+}
+
+.footer-wrap .reserve {
+  border: 1px solid #707070;
+  font-size: 18px;
+  letter-spacing: 1.8px;
+  text-align: center;
+  width: 200px;
+  color: #707070;
+}
+
+.footer-wrap .reserve p {
+  line-height: 32px;
 }
 
 .test {

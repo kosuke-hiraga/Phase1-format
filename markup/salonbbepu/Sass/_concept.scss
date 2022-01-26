@@ -1,5 +1,5 @@
 .concept{
-    height: 1300px;
+    height: 1100px;
     background: linear-gradient(to bottom, #A193861F 0% 50%, #A1938689 50% 100%);
     // width: 100%;
 
@@ -22,7 +22,7 @@
         color: #707070;
         
 
-        p{;
+        p{
             display: inline-block;
             font-size: 18px;
             // margin-right: 120px;
@@ -31,9 +31,7 @@
         }
 
         &::after{
-            // display: block;
-            width: 100px;
-            // height: 10px;
+            width: 1000px;
             display: inline-block;
             border-bottom: 1px solid;
             content: "";
