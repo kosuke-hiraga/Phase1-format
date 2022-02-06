@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /*後に必要になるかも*/
+/* mixin */
 /* 
 html5doctor.com Reset Stylesheet
 v1.6.1
@@ -117,6 +118,7 @@ input, select {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 800px;
 }
 
 .first-v .first-v-content-wrap {
@@ -154,15 +156,58 @@ input, select {
   height: 100%;
 }
 
+@media (max-width: 599px) {
+  .first-v {
+    position: relative;
+    height: 600px;
+  }
+  .first-v .first-v-content-wrap {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+  .first-v .first-v-content-wrap .first-v__content {
+    color: #ffffff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-transform: translate(0%, -80%);
+            transform: translate(0%, -80%);
+  }
+  .first-v .first-v-content-wrap .first-v__content .content_ja {
+    letter-spacing: 2.3px;
+    font-size: 23px;
+    margin-bottom: 0px;
+  }
+  .first-v .first-v-content-wrap .first-v__content .content_en {
+    letter-spacing: 2.8px;
+    font-size: 28px;
+    padding: 30px 0;
+  }
+  .first-v .first-v-img {
+    width: 100%;
+    overflow: hidden;
+  }
+  .first-v .first-v-img img {
+    width: 130%;
+    height: 100%;
+  }
+}
+
 header {
-  height: 100vh;
-  height: 600px;
+  height: 100px;
+  width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 77px;
-  margin-top: 68px;
   position: absolute;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .nav_wrap {
@@ -170,11 +215,15 @@ header {
   display: -ms-flexbox;
   display: flex;
   letter-spacing: 3.8px;
+  margin-left: 77px;
+  margin-top: 68px;
+  white-space: nowrap;
 }
 
 .store-title {
   font-size: 38px;
   letter-spacing: 3.8px;
+  display: inline-block;
 }
 
 nav ul {
@@ -190,6 +239,52 @@ nav ul li {
 
 nav ul li:nth-of-type(1) {
   border-bottom: 1px solid;
+}
+
+@media (max-width: 599px) {
+  header {
+    height: 70px;
+    position: static;
+  }
+  nav li:nth-child(-n+4) {
+    display: none;
+  }
+  .nav_wrap {
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    letter-spacing: 2.2px;
+    margin: 0 auto;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .nav_wrap .store-title {
+    font-size: 22px;
+  }
+  .ham {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 14px;
+  }
+  .ham span {
+    content: "";
+    width: 25px;
+    height: 1px;
+    background-color: black;
+  }
+  .ham span:nth-of-type(3) {
+    width: 15px;
+  }
 }
 
 .concept {
@@ -280,8 +375,66 @@ nav ul li:nth-of-type(1) {
   font-family: Hiragino Kaku Gothic Pro;
 }
 
+@media (max-width: 599px) {
+  .concept {
+    height: 700px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#A193861F), color-stop(30%, #A1938689));
+    background: linear-gradient(to bottom, #A193861F 0% 30%, #A1938689 30% 100%);
+  }
+  .concept .concept-wrap {
+    top: 60px;
+  }
+  .concept .concept-wrap .concept__title {
+    margin-bottom: 50px;
+  }
+  .concept__img-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .concept__img-wrap :nth-of-type(1) {
+    height: 205px;
+    width: 50%;
+  }
+  .concept__img-wrap :nth-of-type(2) {
+    height: 205px;
+    width: 50%;
+  }
+  .concept__messege-wrap {
+    height: 200px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 50px auto 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .concept__messege-wrap .messegeRight {
+    width: 200px;
+    font-size: 18px;
+    letter-spacing: 7.2px;
+    text-align: center;
+    margin: 0 auto;
+    color: #FFFFFF;
+    font-family: "ヒラギノ明朝 ProN W3";
+  }
+  .concept__messege-wrap .messegeLeft {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
 .menu {
-  width: 100vw;
+  width: 100%;
   padding-bottom: 100px;
   background-color: white;
 }
@@ -365,6 +518,33 @@ nav ul li:nth-of-type(1) {
   text-align: right;
 }
 
+@media (max-width: 599px) {
+  .menu {
+    padding-bottom: 0;
+  }
+  .menu-title {
+    margin-top: 60px;
+    margin-bottom: 50px;
+  }
+  .menu__content-wrap {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .menu__content {
+    width: 100%;
+    margin: 0 auto 50px;
+  }
+  .menu__content--img {
+    width: 100%;
+  }
+  .menu__content--title {
+    text-align: left;
+  }
+}
+
 .access {
   background-color: #A193861F;
   padding-top: 300px;
@@ -408,19 +588,20 @@ nav ul li:nth-of-type(1) {
   background-color: #D0C5BA;
 }
 
-.access-wrap .access__content-wrap .access__content--left {
-  width: 40%;
-  color: #FFFFFF;
-  letter-spacing: 1.6px;
-  text-align: left;
-  padding-left: 100px;
+.access-wrap .access__content-wrap .access__content--left-wrap {
+  width: 100%;
   position: relative;
-  top: 50%;
-  -webkit-transform: translate(0%, -25%);
-          transform: translate(0%, -25%);
 }
 
-.access-wrap .access__content-wrap .access__content--left .storeName {
+.access-wrap .access__content-wrap .access__content--left-wrap .access__content--left {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.access-wrap .access__content-wrap .access__content--left-wrap .access__content--left .storeName {
   color: #00000038;
   font-size: 24px;
   letter-spacing: 2.4px;
@@ -428,25 +609,63 @@ nav ul li:nth-of-type(1) {
   font-weight: bold;
 }
 
-.access-wrap .access__content-wrap .access__content--left .tel {
+.access-wrap .access__content-wrap .access__content--left-wrap .access__content--left .tel {
   margin-bottom: 23px;
 }
 
-.access-wrap .access__content-wrap .access__content--left .businessHour {
+.access-wrap .access__content-wrap .access__content--left-wrap .access__content--left .businessHour {
   margin-bottom: 23px;
 }
 
-.access-wrap .access__content-wrap .access__content--left .resularHoliday {
+.access-wrap .access__content-wrap .access__content--left-wrap .access__content--left .resularHoliday {
   margin-bottom: 23px;
 }
 
 .access-wrap .access__content-wrap .access__content--right {
-  width: 60%;
+  width: 70%;
 }
 
 .access-wrap .access__content-wrap .access__content--right img {
   width: 100%;
   height: 100%;
+}
+
+@media (max-width: 599px) {
+  .access {
+    padding-top: 0px;
+    padding-bottom: 50px;
+  }
+  .access .access__title {
+    padding-left: 0px;
+    padding-top: 60px;
+    margin-left: 20px;
+    margin-bottom: 60px;
+  }
+  .access-wrap {
+    height: 700px;
+  }
+  .access-wrap .access__content-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    height: auto;
+  }
+  .access-wrap .access__content-wrap .access__content--left-wrap {
+    height: 300px;
+  }
+  .access-wrap .access__content-wrap .access__content--left-wrap .access__content--left {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    position: static;
+    color: white;
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+  .access-wrap .access__content-wrap .access__content--right {
+    width: 100%;
+    overflow: hidden;
+  }
 }
 
 footer {
@@ -501,7 +720,40 @@ footer {
   line-height: 32px;
 }
 
-.test {
+@media (max-width: 599px) {
+  .footer-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 190px;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    margin: 75px auto 0;
+  }
+  .footer-wrap .footer__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    font-size: 18px;
+  }
+  .footer__title p {
+    font-size: 18px;
+    letter-spacing: 1.8px;
+  }
+  .reserve {
+    margin: 0 auto;
+  }
+}
+
+.gg {
   background-color: red;
 }
 /*# sourceMappingURL=salonbeppu.css.map */

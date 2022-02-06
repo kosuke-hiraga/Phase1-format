@@ -1,7 +1,32 @@
 /*後に必要になるかも*/
-@import "reset";
+
 // @import "lib";
 
+
+
+/* mixin */
+// PC画面サイズ以上
+@mixin pc {
+    @media (min-width:1025px){
+        @content;
+    }
+}
+
+// タブレット画面
+@mixin tab {
+    @media (max-width:1024px){
+        @content;
+    }
+}
+
+// スマホ画面
+@mixin sp {
+    @media (max-width:599px){
+        @content;
+    }
+}
+
+@import "reset";
 @import "first-v";
 @import "header";
 @import "concept";
@@ -11,6 +36,9 @@
 
 
 
-.test{
+.gg{
     background-color: red;
+    // width: 800px;
+    // width: 599px;
+
 }

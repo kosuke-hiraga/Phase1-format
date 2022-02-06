@@ -40,3 +40,35 @@ footer{
         }
     }
 }
+
+
+@include sp{
+    .footer-wrap{
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        height: 190px;
+        padding-top: 60px;
+        padding-bottom: 20px;
+        margin: 75px auto 0;
+        // margin: 10px auto 0;
+
+
+        .footer__title{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            font-size: 18px;
+        }
+    }
+        .footer__title p{
+            font-size: 18px;
+            letter-spacing: 1.8px;
+        }
+
+        .reserve{
+            margin: 0 auto;
+        }
+
+
+
+}

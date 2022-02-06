@@ -1,22 +1,27 @@
 header{
-    height: 100vh;
-    height: 600px;
+    height: 100px;
+    width: 100vw;
     display: flex;
-    margin-left: 77px;
-    margin-top: 68px;
+    // margin-left: 77px;
+    // margin-top: 68px;
     position: absolute;
+    align-items: center;
+    // text-align: center;
 }
 
 .nav_wrap{
     display: flex;
-    // margin-left: 77px;
-    // margin-top: 68px;
     letter-spacing: 3.8px;
+    margin-left: 77px;
+    margin-top: 68px;
+    white-space: nowrap;
 }
 
 .store-title{
     font-size: 38px;
     letter-spacing: 3.8px;
+    // width: 2000px;
+    display: inline-block;
 
 }
 
@@ -33,6 +38,51 @@ nav{
         }
     }
 
+
+}
+
+
+
+@include sp{
+    header{
+        height: 70px;
+        position: static; //宙に浮かせない為
+    }
+
+    nav{
+        li:nth-child(-n+4){
+            display: none; //ハンバーガーメニュー以外を非表示
+        }
+    }
+
+    .nav_wrap{
+        width: 90%;
+        display: flex;
+        letter-spacing: 2.2px;
+        margin: 0 auto;
+        justify-content: space-between;
+
+        .store-title{
+            font-size: 22px;
+        }
+    }
+
+
+    .ham{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 14px;
+        span{
+            content: "";
+            width: 25px;
+            height: 1px;
+            background-color: black;
+            &:nth-of-type(3){
+                width: 15px;
+            }
+        }
+    }
 
 }
 
