@@ -15,6 +15,10 @@ header{
     margin-left: 77px;
     margin-top: 68px;
     white-space: nowrap;
+
+    @media(min-width: 600px) and (max-width: 900px){
+        display: inline;
+    }
 }
 
 .store-title{
@@ -27,17 +31,21 @@ header{
 
 nav{
     ul{
-
         display: flex;
         font-size: 18px;
         li{
             margin-left: 20px;
             &:nth-of-type(1){
                 border-bottom: 1px solid;
+                @media(min-width: 600px) and (max-width: 900px){
+                    margin-left: 1px;
+                }
             }
         }
     }
-
+    @media(min-width: 600px) and (max-width: 900px){
+        margin-top: 10px;
+    }
 
 }
 

@@ -220,6 +220,12 @@ header {
   white-space: nowrap;
 }
 
+@media (min-width: 600px) and (max-width: 900px) {
+  .nav_wrap {
+    display: inline;
+  }
+}
+
 .store-title {
   font-size: 38px;
   letter-spacing: 3.8px;
@@ -239,6 +245,18 @@ nav ul li {
 
 nav ul li:nth-of-type(1) {
   border-bottom: 1px solid;
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+  nav ul li:nth-of-type(1) {
+    margin-left: 1px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+  nav {
+    margin-top: 10px;
+  }
 }
 
 @media (max-width: 599px) {
@@ -317,7 +335,7 @@ nav ul li:nth-of-type(1) {
 }
 
 .concept__title::after {
-  width: 1000px;
+  width: 100px;
   display: inline-block;
   border-bottom: 1px solid;
   content: "";
@@ -345,8 +363,8 @@ nav ul li:nth-of-type(1) {
 }
 
 .concept__messege-wrap {
-  height: 130px;
-  width: 1000px;
+  height: 150px;
+  width: 850px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -357,6 +375,7 @@ nav ul li:nth-of-type(1) {
 }
 
 .concept__messege-wrap .messegeRight {
+  white-space: nowrap;
   width: 455px;
   font-size: 40px;
   letter-spacing: 16px;
@@ -373,6 +392,37 @@ nav ul li:nth-of-type(1) {
   text-align: center;
   color: #FFFFFF;
   font-family: Hiragino Kaku Gothic Pro;
+}
+
+@media (max-width: 1024px) {
+  .concept__messege-wrap {
+    height: 200px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 50px auto 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .concept__messege-wrap .messegeRight {
+    width: 200px;
+    font-size: 18px;
+    letter-spacing: 7.2px;
+    text-align: center;
+    margin: 0 auto;
+    color: #FFFFFF;
+    font-family: "ヒラギノ明朝 ProN W3";
+  }
+  .concept__messege-wrap .messegeLeft {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 599px) {
@@ -476,6 +526,7 @@ nav ul li:nth-of-type(1) {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 100%;
 }
 
 .menu__content {
@@ -516,6 +567,27 @@ nav ul li:nth-of-type(1) {
 
 .menu__content--price {
   text-align: right;
+}
+
+@media (max-width: 1024px) {
+  .menu__content {
+    width: 30%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 10px;
+  }
+  .menu__content--img {
+    width: 100%;
+  }
+  .menu__content--img img {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 @media (max-width: 599px) {
@@ -599,6 +671,7 @@ nav ul li:nth-of-type(1) {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  white-space: nowrap;
 }
 
 .access-wrap .access__content-wrap .access__content--left-wrap .access__content--left .storeName {
@@ -693,6 +766,7 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  white-space: nowrap;
 }
 
 .footer-wrap .footer__title .fab {

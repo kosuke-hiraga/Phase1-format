@@ -28,7 +28,7 @@
         }
 
         &::after{
-            width: 1000px;
+            width: 100px;
             display: inline-block;
             border-bottom: 1px solid;
             content: "";
@@ -59,13 +59,14 @@
 }
 
 .concept__messege-wrap{
-    height: 130px;
-    width: 1000px;
+    height: 150px;
+    width: 850px;
     display: flex;
     margin: 92px auto 0;
     justify-content: space-between;
     .messegeRight{
         // width: 55%;
+        white-space: nowrap;
         width: 455px;
         font-size: 40px;
         letter-spacing: 16px;
@@ -87,6 +88,64 @@
     }
 }
 
+
+
+@include tb{
+
+    // .concept{
+    //     height: 700px;
+    //     background: linear-gradient(to bottom, #A193861F 0% 30%, #A1938689 30% 100%);
+
+    //     .concept-wrap{
+    //         top: 60px;
+
+    //         .concept__title{
+    //             margin-bottom: 50px;
+    //         }
+    //     }
+    // }
+    
+    // .concept__img-wrap{
+    //     display: flex;
+    //     justify-content: space-between;
+
+    //     :nth-of-type(1){
+    //         height: 205px;
+    //         width: 50%;       
+    //         // background-size: contain; 
+    //         // object-fit: cover;
+    //         // transform: translate(-20%, 0%);
+    //     }
+    //     :nth-of-type(2){
+    //         height: 205px;
+    //         width: 50%;        
+    //         // margin-left: 10px;
+    //     }
+    // }
+    .concept__messege-wrap{
+        height: 200px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 50px auto 0;
+        justify-content: space-between;
+        .messegeRight{
+            width: 200px;
+            font-size: 18px;
+            letter-spacing: 7.2px;
+            text-align: center;
+            margin: 0 auto;
+            // line-height: 65px;
+            color: #FFFFFF;
+            // font-family: Hiragino Mincho Pro;
+            font-family:"ヒラギノ明朝 ProN W3";
+        }
+        .messegeLeft{
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
+}
 
 
 @include sp{
@@ -144,7 +203,4 @@
             margin: 0 auto;
         }
     }
-
-
-
 }

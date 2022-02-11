@@ -13,7 +13,7 @@
 }
 
 // タブレット画面
-@mixin tab {
+@mixin tb {
     @media (max-width:1024px){
         @content;
     }

@@ -16,6 +16,7 @@ footer{
         font-size: 32px;
         letter-spacing: 3.2px;
         display: flex;
+        white-space: nowrap;
 
         .fab{
             color: black;
@@ -35,6 +36,7 @@ footer{
         text-align: center;
         width: 200px;
         color: #707070;
+        // width: 50%;
         p{
             line-height: 32px;
         }
@@ -60,14 +62,14 @@ footer{
             font-size: 18px;
         }
     }
-        .footer__title p{
-            font-size: 18px;
-            letter-spacing: 1.8px;
-        }
+    .footer__title p{
+        font-size: 18px;
+        letter-spacing: 1.8px;
+    }
 
-        .reserve{
-            margin: 0 auto;
-        }
+    .reserve{
+        margin: 0 auto;
+    }
 
 
 

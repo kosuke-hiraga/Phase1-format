@@ -58,6 +58,7 @@
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
+                white-space: nowrap;
 
                 .storeName{
                     color: #00000038;
@@ -66,8 +67,8 @@
                     margin-bottom: 30px;
                     font-weight: bold;
                 }
-                .tel{margin-bottom: 23px;}
-                .businessHour{margin-bottom: 23px;}
+                .tel{           margin-bottom: 23px;}
+                .businessHour{  margin-bottom: 23px;}
                 .resularHoliday{margin-bottom: 23px;}
             }
         }
